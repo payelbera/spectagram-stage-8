@@ -37,15 +37,9 @@ export default class CreatePost extends Component {
         if (
             this.state.caption
         ) {
-            let postData = {
-                preview_image: this.state.previewImage,
-                caption: this.state.caption,
-                author: firebase.auth().currentUser.displayName,
-                created_on: new Date(),
-                author_uid: firebase.auth().currentUser.uid,
-                profile_image: this.state.profile_image,
-                likes: 0
-            };
+            //create postData = {
+                
+            //};
             await firebase
                 .database()
                 .ref(
