@@ -41,24 +41,7 @@ export default class Feed extends Component {
     }
 
     fetchPosts = () => {
-        firebase
-            .database()
-            .ref("/posts/")
-            .on("value", (snapshot) => {
-                let posts = []
-                if (snapshot.val()) {
-                    Object.keys(snapshot.val()).forEach(function (key) {
-                        posts.push({
-                            key: key,
-                            value: snapshot.val()[key]
-                        })
-                    });
-                }
-                this.setState({ posts: posts })
-                this.props.setUpdateToFalse();
-            }, function (errorObject) {
-                console.log("The read failed: " + errorObject.code);
-            })
+        // write the fetch post
     }
 
 
