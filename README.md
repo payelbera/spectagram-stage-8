@@ -1,2 +1,2 @@
 # spectagram-stage-8
-project solution for c88
+work on the createPost.js --> addPost()
